@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "YingHuaYuLuo-2";
+    src: url("YingHuaYuLuo-2.woff2") format("woff2"),
+         url("YingHuaYuLuo-2.woff") format("woff"),
+         url("YingHuaYuLuo-2.ttf") format("truetype"),
+         url("YingHuaYuLuo-2.eot") format("embedded-opentype"),
+         url("YingHuaYuLuo-2.svg") format("svg");
+  }
