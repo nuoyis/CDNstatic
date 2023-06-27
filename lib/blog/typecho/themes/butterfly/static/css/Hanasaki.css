@@ -1,0 +1,794 @@
+/* 手机侧边栏优化平滑弧度 */
+#rightside{
+    opacity: 0.8;
+    transform: translateX(-48px)!important;
+}
+#rightside #rightside-config-hide{
+    height: 0;
+    opacity: 0;
+    transform: translate(45px, 0);
+}
+#rightside #rightside-config-hide.show{
+    height: auto;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+#rightside > div > button, #rightside > div > a {
+    border-radius: 12px!important;
+    width: 38px!important;
+    height: 38px!important;
+    margin-bottom: 4px!important;
+}
+
+
+/* 博主昵称颜色 */
+
+.author-info__name {
+    color: var(--font-color);
+}
+
+/*  评论waline  */
+
+.vwrap {
+    box-shadow: 2px 2px 5px #bbb;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0px 30px 0px;
+}
+
+
+/* 评论区代码块 */
+
+.v[data-class=v] code {
+    color: #c7254e;
+    background-color: #F9F2F4;
+}
+
+
+/* 设置评论框 */
+
+.vcard {
+    box-shadow: 2px 2px 5px #bbb;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+
+/* 取消回复聊天框 */
+
+.vquote .vcard {
+    box-shadow: 2px 2px 5px transparent;
+    background: rgba(255, 255, 255, 0.0);
+    padding: 0px;
+}
+
+
+/* background.js去头图（原本js才能去处且不影响文章banner图设置，现在没必要了） */
+/* 使用css进行banner图去除，新版本可以用*/
+.full_page:before{
+    background-color: rgba(0, 0, 0, 0.0)!important;
+}
+/* 头图-头部背景图 */
+.full_page{
+    background-image: url()!important;
+    background-color: rgba(0, 0, 0, 0.0)!important;
+}
+
+/* 动画效果 */
+#waline-wrap textarea::before {
+    height: -20px;
+}
+/* 页脚footer 半透明 */
+
+#footer {
+    background: rgba(255, 255, 255, .15);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+    background: rgba(255, 255, 255, .15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color);
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color);
+}
+
+
+/* 滚动条 */
+
+[data-theme=dark] #article-container figure.highlight table::-webkit-scrollbar-thumb {
+    background: #4c4c4c !important
+}
+
+[data-theme=dark] #article-container .highlight:not(.js-file-line-container) {
+    box-shadow: rgb(173 173 173 / 40%) 0 0 5px 0
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-image: linear-gradient(-225deg, #feb7ffba 0, #73fff1a6 100%) !important
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(-225deg, #fb00ffba 0, #00ffe5a6 100%) !important
+}
+
+#sidebar {
+    background-image: linear-gradient(-225deg, #e3fdf5 0, #f9eef7 100%)
+}
+
+#sidebar .sidebar-toc .toc-link.active {
+    border-radius: 6px;
+    padding: 6px
+}
+
+.post-reward .reward-button {
+    border-radius: 20px
+}
+
+.article-sort-item-info {
+    background: #49b1f515;
+    border-radius: 10px;
+    padding: 15px !important;
+    margin-left: -2%
+}
+
+.flink#article-container .flink-list>.flink-list-item {
+    border: 1px solid #8888885e
+}
+
+#article-container figure.highlight .highlight-tools .code-lang {
+    font-size: .7rem;
+    left: 50% !important;
+    transform: translateX(-50%)
+}
+
+#vcomment textarea:focus {
+    background-position-y: 150px;
+    transition: .25s ease-in-out
+}
+
+#aside_content .aside-list>.aside-list-item .thumbnail>img {
+    border-radius: 70px;
+    width: 80%;
+    height: 80%;
+    margin-top: 6px;
+    border: 1px solid #8888886b;
+    padding: 2px
+}
+
+#aside_content .aside-list>.aside-list-item .content {
+    padding-left: 0
+}
+
+#aside_content .aside-list>.aside-list-item .thumbnail>img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: all 1s;
+    transition: 1s
+}
+
+.CA,
+.CA a,
+.CA a.new,
+a .CA {
+    filter: blur(5px)
+}
+
+body:not(.CA_toggle_on) .CA.off,
+body:not(.CA_toggle_on) .CA:active,
+body:not(.CA_toggle_on) .CA:hover {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: all .3s;
+    transition: .3s;
+    filter: blur(0)
+}
+
+.glume-gd {
+    -webkit-animation: 1.5s linear infinite spin;
+    animation: 1.5s linear infinite spin
+}
+
+.glume-gd-stop {
+    -webkit-animation: none !important;
+    animation: none !important
+}
+
+.v[data-class=v] .vwrap .cancel-reply-btn:hover {
+    fill: #41b5407d !important
+}
+
+#article-container .tabs {
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
+}
+
+#article-container .tabs>.nav-tabs,
+#article-container .tabs>.nav-tabs>.tab button {
+    background: #fff
+}
+
+#article-container .tabs>.nav-tabs>.tab:not(.active) button:hover {
+    color: #1e90ff
+}
+
+[data-theme=dark] #article-container .tabs {
+    background: 0 0;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, .1)
+}
+
+[data-theme=dark] #article-container .tabs>.nav-tabs,
+[data-theme=dark] #article-container .tabs>.nav-tabs>.tab button {
+    background: #000
+}
+
+.tip {
+    position: relative;
+    color: #fff;
+    background: #20a0ff;
+    background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+    background: -webkit-linear-gradient(left, #20a0ff, #20b8ff);
+    background: linear-gradient(90deg, #20a0ff, #20b8ff);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgba(32, 160, 255, .5);
+    box-shadow: 0 3px 5px rgba(32, 160, 255, .5);
+    margin-bottom: 20px
+}
+
+.tip p {
+    margin: 5px 0 !important
+}
+
+.tip:before {
+    background: #20a0ff;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+    background: -webkit-linear-gradient(bottom, #0092ff, #20b8ff);
+    background: linear-gradient(0deg, #0092ff, #20b8ff);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f129";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center
+}
+
+.btn,
+.getit a {
+    position: relative
+}
+
+.well .tip:before {
+    -webkit-box-shadow: 0 0 0 2.5px #f7f8f9;
+    box-shadow: 0 0 0 2.5px #f7f8f9
+}
+
+.tip ol {
+    margin: 0
+}
+
+.tip.success {
+    background: #61be33;
+    background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+    background: -webkit-linear-gradient(left, #61be33, #8fce44);
+    background: linear-gradient(90deg, #61be33, #8fce44);
+    text-shadow: 0 -1px #61be33;
+    -webkit-box-shadow: 0 3px 5px rgba(104, 195, 59, .5);
+    box-shadow: 0 3px 5px rgba(104, 195, 59, .5)
+}
+
+.tip.success:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+    background: -webkit-linear-gradient(bottom, #52bb1d, #95d34b);
+    background: linear-gradient(0deg, #52bb1d, #95d34b);
+    content: "\f00c";
+    text-shadow: 0 -1px #61be33
+}
+
+.tip.warning {
+    background: #ff953f;
+    background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+    background: -webkit-linear-gradient(left, #ff953f, #ffb449);
+    background: linear-gradient(90deg, #ff953f, #ffb449);
+    text-shadow: 0 -1px #ff953f;
+    -webkit-box-shadow: 0 3px 5px rgba(255, 154, 73, .5);
+    box-shadow: 0 3px 5px rgba(255, 154, 73, .5)
+}
+
+.tip.warning:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+    background: -webkit-linear-gradient(bottom, #ff8f35, #ffc149);
+    background: linear-gradient(0deg, #ff8f35, #ffc149);
+    content: "\f12a";
+    text-shadow: 0 -1px #ff953f
+}
+
+.tip.error {
+    background: #ff4949;
+    background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+    background: -webkit-linear-gradient(left, #ff4949, #ff7849);
+    background: linear-gradient(90deg, #ff4949, #ff7849);
+    text-shadow: 0 -1px #ff4949;
+    -webkit-box-shadow: 0 3px 5px rgba(255, 73, 73, .5);
+    box-shadow: 0 3px 5px rgba(255, 73, 73, .5)
+}
+
+.tip.error:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+    background: -webkit-linear-gradient(bottom, #ff3838, #ff7849);
+    background: linear-gradient(0deg, #ff3838, #ff7849);
+    content: "\f00d";
+    text-shadow: 0 -1px #ff4949
+}
+
+.tip.primary {
+    background: #6f42c1;
+    background: -webkit-gradient(linear, left top, right top, from(#6f42c1), to(#7449c1));
+    background: -webkit-linear-gradient(left, #6f42c1, #7449c1);
+    background: linear-gradient(90deg, #6f42c1, #7449c1);
+    text-shadow: 0 -1px #6f42c1;
+    -webkit-box-shadow: 0 3px 5px #8442ff80;
+    box-shadow: 0 3px 5px #8442ff80
+}
+
+.tip.primary:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#6f42c1), to(#7449c1));
+    background: -webkit-linear-gradient(bottom, #6f42c1, #7449c1);
+    background: linear-gradient(0deg, #6f42c1, #7449c1);
+    content: "\f055";
+    text-shadow: 0 -1px #8442ff80
+}
+
+[data-theme=dark] .tip {
+    filter: brightness(.75)
+}
+
+.checkbox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.checkbox input[type=checkbox]:after,
+.checkbox input[type=checkbox]:before {
+    position: absolute;
+    content: "";
+    background: #fff
+}
+
+.checkbox input[type=checkbox]:before {
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px;
+    transition: .2s ease-in;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg)
+}
+
+.checkbox input[type=checkbox]:after {
+    right: 7px;
+    bottom: 3px;
+    width: 2px;
+    height: 0;
+    transition: .2s ease-out .25s;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg)
+}
+
+.checkbox input[type=checkbox]:checked:before {
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 2px
+}
+
+.checkbox input[type=checkbox]:checked:after {
+    right: 3px;
+    bottom: 1px;
+    width: 2px;
+    height: 10px
+}
+
+.checkbox.minus input[type=checkbox]:after,
+.checkbox.minus input[type=checkbox]:before {
+    transform: rotate(0);
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.minus input[type=checkbox]:checked:after,
+.checkbox.minus input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:before {
+    transform: rotate(0);
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:after {
+    transform: rotate(0);
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 0
+}
+
+.checkbox.plus input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:checked:after {
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 10px
+}
+
+.checkbox.times input[type=checkbox]:before {
+    transform: rotate(45deg);
+    left: 3px;
+    top: 1px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:after {
+    transform: rotate(135deg);
+    right: 3px;
+    top: 1px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:checked:after {
+    right: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox input[type=radio] {
+    border-radius: 50%
+}
+
+.checkbox input[type=radio]:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 2px;
+    transform: scale(0);
+    transition: .25s ease-out
+}
+
+.checkbox input[type=radio]:checked:before {
+    transform: scale(1)
+}
+
+.checkbox input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    transition: .15s ease-out;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    border-radius: 2px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 8px;
+    border: 2px solid #2196f3
+}
+
+.checkbox input[type=checkbox]:checked,
+.checkbox input[type=radio]:checked:before {
+    background: #2196f3
+}
+
+.checkbox.red input {
+    border-color: #fe5f58
+}
+
+.checkbox.red input[type=checkbox]:checked,
+.checkbox.red input[type=radio]:checked:before {
+    background: #fe5f58
+}
+
+.checkbox.green input {
+    border-color: #3dc550
+}
+
+.checkbox.green input[type=checkbox]:checked,
+.checkbox.green input[type=radio]:checked:before {
+    background: #3dc550
+}
+
+.checkbox.yellow input {
+    border-color: #ffbd2b
+}
+
+.checkbox.yellow input[type=checkbox]:checked,
+.checkbox.yellow input[type=radio]:checked:before {
+    background: #ffbd2b
+}
+
+.checkbox.cyan input {
+    border-color: #1bcdfc
+}
+
+.checkbox.cyan input[type=checkbox]:checked,
+.checkbox.cyan input[type=radio]:checked:before {
+    background: #1bcdfc
+}
+
+.checkbox.blue input {
+    border-color: #2196f3
+}
+
+.checkbox.blue input[type=checkbox]:checked,
+.checkbox.blue input[type=radio]:checked:before {
+    background: #2196f3
+}
+
+.checkbox p {
+    display: inline-block;
+    margin-top: 2px !important;
+    margin-bottom: 0 !important
+}
+
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+
+@media screen and (max-width: 800px) {
+    #aside_content div:not(:last-child) {
+        display: none;
+        font-size: 13px;
+    }
+}
+
+
+/* 首页中间打字效果上方 */
+
+#page-header #site_title {
+    color: #80bdab;
+}
+
+
+/* 顶部导航栏 */
+
+#nav a {
+    color: #f9f2f4;
+}
+
+/*新版3.0.0以上添加up酱置顶ico图标上移问题*/
+
+.fas.fa-arrow-up {
+    line-height: 2;
+}
+/* 网页背景图 */
+#web_bg{
+    background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/pic1.webp)!important;
+    background-attachment: local!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+/* 首页夜晚模式头图透明 */
+[data-theme='dark'] #page-header:before {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+}
+/* 修改PC夜晚模式背景图 */
+
+[data-theme='dark'] #web_bg:before {
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    background-image: url()!important;
+    background-attachment: local!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+/* 修改PE背景图 */
+@media screen and (max-width: 900px){
+    #web_bg{
+        background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/pic1.jpg)!important;
+        background-attachment: local!important;
+        background-position: center!important;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+    }
+    [data-theme='dark'] #web_bg:before{
+        background-color: rgba(0, 0, 0, 0.7)!important;
+        background-attachment: local!important;
+        background-position: center!important;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+    }
+}
+
+/* 友链夜间模式字体颜色修正 */
+#article-container .flink .flink-list > .flink-list-item a .flink-item-name{
+    color: var(--font-color);
+}
+#article-container .flink .flink-list > .flink-list-item a .flink-item-desc{
+    color: var(--font-color);
+}
+
+/* 针对手机访问的优化-以下皆是 */
+@media screen and (max-width: 1910px){
+    .bg-video {
+        display:none
+    }
+}
+/* 手机访问时将电脑侧边栏去除 */
+@media screen and (max-width: 900px){
+    #aside-content > .card-widget:first-child{
+        display: none;
+    }
+    #waifu{
+        display: none;
+    }
+    #aside-content > .card-widget.card-announcement{
+        display: none;
+    }
+    .aplayer-body{
+        display: none;
+    }
+    .aplayer-lrc-contents{
+        display: none;
+    }
+}
+/* 全局音乐优化调整 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+  
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+/* 代码块优化 */
+figure , .highlight{
+    border-radius: 13px;
+}
+/* Waline評論區黑暗模式 */
+/* [data-theme='dark'] .vcomment .vpanel {
+    background: rgba(0, 0, 0, 0.0) !important;
+} */
+
+/* Re：萌娘百科上的黑幕
+这条css是用来让你鼠标悬停的
+用处当然是隐藏一些见不得人的话啦！
+然后只要在你想要加黑幕的话之前加上
+
+<span class="heimu" title="你知道的太多了">
+
+在你想要加黑幕的话之后加上
+
+</span>
+
+更多：https://zh.moegirl.org/MediaWiki:Mobile.css 本文引自萌娘百科(https://zh.moegirl.org)。
+
+*/
+
+.heimu, .heimu a, a .heimu, .heimu a.new {
+    background-color: #252525;
+    color: #252525!important; 
+    text-shadow: none;
+}
+.heimu:hover, .heimu:active,
+.heimu:hover .heimu, .heimu:active .heimu {
+    color: white !important;
+}
+.heimu:hover a, a:hover .heimu,
+.heimu:active a, a:active .heimu {
+    color: lightblue !important;
+}
+.heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
+.heimu:active .new, .heimu .new:active, .new:active .heimu {
+    color: #BA0000 !important;
+}
+
+
+/*  自适配  */
+
+.media-wrap {
+    position: relative;
+    max-width: 100% !important;
+    height: 0;
+    padding-bottom: 45%;
+    margin-bottom: 20px
+}
+
+@media (max-width:736px) {
+    .media-wrap {
+        padding-bottom: 56.25%
+    }
+}
+
+.media-wrap embed, .media-wrap iframe, .media-wrap object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100% !important;
+    height: 100% !important
+}
+
+.video{
+    height: 400px;
+}
+@media (max-width:900px) {
+    .video{
+        height: 400px;
+    }
+}
+@media (max-width:700px) {
+    .video{
+        height: 300px;
+    }
+}
