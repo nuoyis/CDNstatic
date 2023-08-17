@@ -631,7 +631,7 @@ body:not(.CA_toggle_on) .CA:hover {
 }
 /* 网页背景图 */
 #web_bg{
-    background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/pic1.webp)!important;
+    background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/background.webp)!important;
     background-attachment: local!important;
     background-position: center!important;
     background-size: cover!important;
