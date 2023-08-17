@@ -655,7 +655,7 @@ body:not(.CA_toggle_on) .CA:hover {
 /* 修改PE背景图 */
 @media screen and (max-width: 900px){
     #web_bg{
-        background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/pic1.jpg)!important;
+        background-image: url(https://static.nuoyis.com/lib/blog/typecho/themes/butterfly/images/background.webp)!important;
         background-attachment: local!important;
         background-position: center!important;
         background-size: cover!important;
