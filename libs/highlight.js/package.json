@@ -1,0 +1,26 @@
+{
+    "name": "highlight.js",
+    "filename": "highlight.min.js",
+    "version": "9.1.0",
+    "description": "Easy-to-use, Javascript-based syntax highlighter",
+    "homepage": "http://highlightjs.org",
+    "keywords": [
+       "highlight",
+	   "highlight.js",
+       "syntax highlighter"
+   ],
+   "maintainers": [
+       {
+           "name": "Diwaker Gupta"
+       },
+       {
+           "name": "Ivan Sagalaev", "email": "maniac@softwaremaniacs.org"
+       }
+   ],
+   "repositories": [
+       {
+           "type": "git",
+           "url": "https://github.com/isagalaev/highlight.js"
+       }
+   ]
+}

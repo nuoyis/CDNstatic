@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "YingHuaYuLuo";
+    src: url("YingHuaYuLuo-2.woff2") format("woff2"),
+         url("YingHuaYuLuo-2.woff") format("woff"),
+         url("YingHuaYuLuo-2.ttf") format("truetype"),
+         url("YingHuaYuLuo-2.eot") format("embedded-opentype"),
+         url("YingHuaYuLuo-2.svg") format("svg");
+}
+@font-face {
+    font-family: "zhanku";
+    src: url("zhanku.woff") format("woff"),
+         url("zhanku.ttf") format("truetype"),
+         url("zhanku.eot") format("embedded-opentype"),
+         url("zhanku.svg") format("svg");
+}
+
+body{
+font-family: zhanku;
+}
+
+.site-name{
+font-family: 'YingHuaYuLuo';
+}
