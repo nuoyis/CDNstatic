@@ -95,11 +95,11 @@
 }
 
 #footer #footer-wrap {
-    color: var(--font-color);
+    color: white;
 }
 
 #footer #footer-wrap a {
-    color: var(--font-color);
+    color: white;
 }
 
 
@@ -631,7 +631,7 @@ body:not(.CA_toggle_on) .CA:hover {
 }
 /* 网页背景图 */
 #web_bg{
-    background-image: url(https://static.nuoyis.net/lib/blog/typecho/themes/butterfly/images/background.webp)!important;
+    background-image: url(https://images.nuoyis.net/acg/img/1467.jpg)!important;
     background-attachment: local!important;
     background-position: center!important;
     background-size: cover!important;
@@ -655,7 +655,7 @@ body:not(.CA_toggle_on) .CA:hover {
 /* 修改PE背景图 */
 @media screen and (max-width: 900px){
     #web_bg{
-        background-image: url(https://static.nuoyis.net/lib/blog/typecho/themes/butterfly/images/background.webp)!important;
+        background-image: url(https://images.nuoyis.net/acg/img/1467.jpg)!important;
         background-attachment: local!important;
         background-position: center!important;
         background-size: cover!important;
